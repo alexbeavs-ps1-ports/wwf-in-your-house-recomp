@@ -1,0 +1,18 @@
+{
+  "disc_count": 1,
+  "verdict": "single",
+  "differing_program_fields": [],
+  "warnings": [],
+  "discs": [
+    {
+      "index": 1,
+      "cue_name": "WWF In Your House (USA) (Rev 1).cue",
+      "cue_path": "disc/WWF In Your House (USA) (Rev 1).cue",
+      "serial": "SLUS-00246",
+      "boot_exe": "SLUS_002.46",
+      "entry_pc": "0x8001BDD4",
+      "track_count": 2,
+      "required_disc_fp": "3d56922d758b2c72ffa0e38971ff4f82e812cdc64c8f303d612445b1b07f8c7e"
+    }
+  ]
+}

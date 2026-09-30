@@ -1,0 +1,55 @@
+
+[game]
+name = "WWF In Your House"
+id = "SLUS-00246"
+players = 1
+exe = "disc/SLUS_002.46"
+disc = "disc/WWF In Your House (USA) (Rev 1).cue"
+load_address = "0x80010000"
+entry_pc = "0x8001BDD4"
+text_size = "0x00023800"
+stack_base = "0x801FFFF0"
+
+[prepare_disc]
+out_dir = "disc"
+bin_name = "WWF In Your House (USA) (Rev 1) (Track 1).bin"
+cue_name = "WWF In Your House (USA) (Rev 1).cue"
+boot_exe = "SLUS_002.46"
+known_sizes = [290805984]
+known_md5 = [
+  "fc25587e90d533f1668cff7fb2f80fa4",
+]
+known_sha1 = [
+  "6d98240f21049c5e95ab81f44a1975be234d9f0b",
+]
+known_crc32 = [
+  "022ea46e",
+]
+
+[recompiler]
+bios_config = "psxrecomp/bios/SCPH1001.toml"
+seeds = "seeds/ghidra_funcs.txt"
+out_dir = "generated"
+strict = true
+
+[runtime]
+openbios = false
+bios_hle = false
+window_title = "WWF In Your House Recompiled"
+memcard_dir = "saves"
+overlay_cache = true
+
+[video]
+renderer = "opengl"
+aspect_ratio = "4:3"
+
+[controller]
+default_mode = "digital"
+
+[netplay]
+require_cue = true
+required_tracks = 2
+required_disc_fp = "3d56922d758b2c72ffa0e38971ff4f82e812cdc64c8f303d612445b1b07f8c7e"
+
+[pgo]
+enabled = false
